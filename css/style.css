@@ -221,6 +221,8 @@ ul { list-style: none; }
   box-shadow: 0 8px 20px rgba(15, 122, 111, 0.28);
   transition: background 0.2s;
 }
+.btn-call-icon { flex: none; }
+.hours-icon { flex: none; }
 .btn-call:hover { background: var(--teal-hover); color: #fff; }
 .btn-call-label { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; opacity: 0.9; }
 .btn-call-number { display: block; font-size: 21px; font-weight: 700; margin-top: 2px; }
@@ -339,7 +341,7 @@ ul { list-style: none; }
   gap: 10px;
   text-align: center;
 }
-.step-icon { height: 34px; width: 34px; }
+.step-icon { height: 34px; display: flex; align-items: center; }
 .step-bottom { display: flex; align-items: flex-start; gap: 8px; }
 .step-num {
   width: 20px; height: 20px;
