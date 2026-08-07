@@ -186,7 +186,7 @@ ul { list-style: none; }
   align-items: center;
   gap: 12px;
   font-size: 15.5px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--navy);
 }
 .check-icon {
@@ -258,13 +258,13 @@ ul { list-style: none; }
 }
 .service-card {
   background: #fff;
-  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 32px 24px;
   text-align: center;
+  box-shadow: var(--shadow);
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.service-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(22, 50, 74, 0.12); }
 .service-icon {
   width: 64px; height: 64px;
   border-radius: 50%;
@@ -297,6 +297,7 @@ ul { list-style: none; }
   align-items: center;
   overflow: hidden;
   color: #fff;
+  box-shadow: 0 10px 26px rgba(22, 50, 74, 0.14);
 }
 .price-city { background: #1c3d54; }
 .price-intercity { background: #167a6c; }
@@ -327,13 +328,13 @@ ul { list-style: none; }
 }
 .advantage-card {
   background: #fff;
-  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px 20px;
   text-align: center;
+  box-shadow: var(--shadow);
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.advantage-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.advantage-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(22, 50, 74, 0.12); }
 .adv-icon {
   width: 56px; height: 56px;
   border-radius: 50%;
