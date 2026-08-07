@@ -95,6 +95,7 @@ ul { list-style: none; }
   display: block;
   font-size: 26px;
   font-weight: 700;
+  font-style: italic;
   letter-spacing: 0.06em;
   line-height: 1;
   color: var(--teal);
@@ -107,11 +108,12 @@ ul { list-style: none; }
   gap: 8px;
   margin-top: 6px;
 }
-.logo-line { height: 1px; flex: 1; background: var(--divider); }
+.logo-line { height: 2px; flex: 1; background: var(--teal); }
 .logo-sub {
   font-size: 8.5px;
+  font-weight: 700;
   letter-spacing: 0.16em;
-  color: var(--text-body);
+  color: var(--navy);
   white-space: nowrap;
 }
 
@@ -188,6 +190,7 @@ ul { list-style: none; }
   font-size: 28px;
   line-height: 1.3;
   font-weight: 700;
+  font-style: italic;
   color: var(--navy);
   letter-spacing: 0.005em;
 }
@@ -195,6 +198,7 @@ ul { list-style: none; }
   margin-top: 12px;
   font-size: 15px;
   font-weight: 700;
+  font-style: italic;
   color: var(--teal);
 }
 
@@ -240,7 +244,8 @@ ul { list-style: none; }
   box-shadow: 0 10px 24px rgba(18, 60, 74, 0.12);
 }
 .hours-text { display: flex; flex-direction: column; }
-.hours-text small { font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; color: var(--text-body); }
+.hours-text small { font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; color: var(--navy); }
+.hours-text small:first-of-type { color: var(--teal); }
 .hours-text strong { font-size: 24px; font-weight: 700; color: var(--teal); line-height: 1.1; }
 
 .hero-media {
@@ -248,6 +253,7 @@ ul { list-style: none; }
   z-index: 1;
   height: 430px;
   margin-left: -185px;
+  margin-right: -26px;
   margin-top: -10px;
 }
 .hero-media img {
@@ -256,15 +262,15 @@ ul { list-style: none; }
   width: 100%; height: 100%;
   object-fit: cover;
   border-radius: 16px;
-  clip-path: polygon(36% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: ellipse(145% 95% at 135% 82%);
 }
 .hero-media-stripe {
   position: absolute;
-  left: -34px; top: 0; bottom: 0;
-  width: 190px;
+  left: 0; top: 0; bottom: 0;
+  width: 100%;
   background: linear-gradient(160deg, var(--teal-light), var(--teal));
-  clip-path: polygon(62% 0, 100% 0, 26% 100%, 0 100%);
-  border-radius: 16px 0 0 16px;
+  clip-path: ellipse(150% 97% at 137% 82.5%);
+  border-radius: 16px;
 }
 
 /* ===== Services ===== */
@@ -421,7 +427,7 @@ ul { list-style: none; }
 @media (max-width: 860px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-text h1, .hero-subtitle, .hero-checklist li { white-space: normal; }
-  .hero-media { order: -1; height: 280px; margin-left: 0; margin-top: 0; }
+  .hero-media { order: -1; height: 280px; margin-left: 0; margin-right: 0; margin-top: 0; }
   .hero-media img { clip-path: none; border-radius: 16px; }
   .hero-media-stripe { display: none; }
   .hero-hours-card { box-shadow: none; }
