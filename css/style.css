@@ -267,8 +267,8 @@ ul { list-style: none; }
   position: relative;
   z-index: 1;
   height: 100%;
+  margin-left: -60px;
   margin-right: -26px;
-  background: var(--hero-gradient);
 }
 .hero-photo-frame {
   position: relative;
@@ -284,13 +284,6 @@ ul { list-style: none; }
   object-position: center top;
   transform: scale(1.9);
   transform-origin: 100% 0%;
-}
-.hero-media-stripe {
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 100%;
-  background: linear-gradient(160deg, var(--teal-light), var(--teal));
-  clip-path: ellipse(150% 97% at 137% 82.5%);
 }
 
 /* ===== Services ===== */
@@ -449,7 +442,6 @@ ul { list-style: none; }
   .hero-text h1, .hero-subtitle, .hero-checklist li { white-space: normal; }
   .hero-media { order: -1; height: 280px; margin-left: 0; margin-right: 0; }
   .hero-photo-frame { clip-path: none; border-radius: 16px; }
-  .hero-media-stripe { display: none; }
   .hero-text { padding: 24px 0; }
   .hero-hours-card { box-shadow: none; }
 }
