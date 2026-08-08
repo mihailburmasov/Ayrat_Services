@@ -466,3 +466,10 @@ ul { list-style: none; }
   .advantages-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero-text h1 { font-size: 24px; }
 }
+
+/* ===== Global typeface override: whole site is Montserrat ExtraBold Italic ===== */
+body, body * {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif !important;
+  font-weight: 800 !important;
+  font-style: italic !important;
+}
