@@ -267,7 +267,6 @@ ul { list-style: none; }
   position: relative;
   z-index: 1;
   height: 100%;
-  margin-left: -260px;
   margin-right: -26px;
 }
 .hero-photo-frame {
