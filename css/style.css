@@ -256,7 +256,6 @@ ul { list-style: none; }
   padding: 12px 20px;
   border-radius: 12px;
   box-shadow: 0 10px 24px rgba(18, 60, 74, 0.12);
-  transform: translateX(70px);
 }
 .hours-icon { margin-top: 4px; }
 .hours-text { display: flex; flex-direction: column; }
@@ -269,12 +268,15 @@ ul { list-style: none; }
   z-index: 1;
   height: 100%;
   margin-right: -26px;
+  background: var(--hero-gradient);
 }
 .hero-photo-frame {
   position: relative;
   z-index: 1;
   width: 100%; height: 100%;
   overflow: hidden;
+  background: var(--hero-gradient);
+  clip-path: ellipse(145% 95% at 135% 82%);
 }
 .hero-photo-frame img {
   width: 100%; height: 100%;
@@ -282,6 +284,13 @@ ul { list-style: none; }
   object-position: center top;
   transform: scale(1.9);
   transform-origin: 100% 0%;
+}
+.hero-media-stripe {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 100%;
+  background: linear-gradient(160deg, var(--teal-light), var(--teal));
+  clip-path: ellipse(150% 97% at 137% 82.5%);
 }
 
 /* ===== Services ===== */
@@ -439,7 +448,8 @@ ul { list-style: none; }
   .hero-inner { grid-template-columns: 1fr; }
   .hero-text h1, .hero-subtitle, .hero-checklist li { white-space: normal; }
   .hero-media { order: -1; height: 280px; margin-left: 0; margin-right: 0; }
-  .hero-photo-frame { border-radius: 16px; }
+  .hero-photo-frame { clip-path: none; border-radius: 16px; }
+  .hero-media-stripe { display: none; }
   .hero-text { padding: 24px 0; }
   .hero-hours-card { box-shadow: none; }
 }
@@ -460,7 +470,7 @@ ul { list-style: none; }
   .step-arrow { transform: rotate(90deg); align-self: center; margin: -2px 0; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .btn-call { justify-content: center; }
-  .hero-hours-card { justify-content: center; transform: none; }
+  .hero-hours-card { justify-content: center; }
 }
 
 @media (max-width: 520px) {
