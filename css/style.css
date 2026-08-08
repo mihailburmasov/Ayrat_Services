@@ -133,12 +133,6 @@ ul { list-style: none; }
 }
 .main-nav a { color: #142D45; }
 .main-nav a:hover { color: #177F7A; }
-.main-nav a.active {
-  color: #177F7A;
-  font-weight: 600;
-  border-bottom: 2px solid #177F7A;
-  padding-bottom: 3px;
-}
 
 .header-phone {
   margin-left: auto;
@@ -416,7 +410,6 @@ ul { list-style: none; }
   .site-header { position: relative; }
   .main-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
   .main-nav a { padding: 12px 0; width: 100%; text-align: center; white-space: normal; }
-  .main-nav a.active { border-bottom: none; background: var(--card-bg); }
   .nav-toggle { display: flex; }
   .header-phone .phone-text { display: none; }
 }
