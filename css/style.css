@@ -176,14 +176,6 @@ ul { list-style: none; }
   padding: 0 26px;
   overflow: hidden;
 }
-.hero-arc {
-  position: absolute;
-  right: -120px; top: -60px;
-  width: 640px; height: 520px;
-  border-radius: 50% 0 0 50%;
-  background: var(--teal);
-  opacity: 0.12;
-}
 .hero-inner {
   position: relative;
   display: grid;
