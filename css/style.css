@@ -234,19 +234,22 @@ ul { list-style: none; }
 .hero-hours-card {
   position: relative;
   z-index: 2;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 12px;
+  column-gap: 10px;
+  row-gap: 1px;
   background: #fff;
   border: 1px solid #d6e5e3;
   padding: 12px 20px;
   border-radius: 12px;
   box-shadow: 0 10px 24px rgba(18, 60, 74, 0.12);
 }
-.hours-text { display: flex; flex-direction: column; }
-.hours-text small { font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; color: var(--navy); }
-.hours-text small:first-of-type { color: var(--teal); }
-.hours-text strong { font-size: 24px; font-weight: 700; color: var(--teal); line-height: 1.1; }
+.hours-icon { grid-column: 1; grid-row: 1; }
+.hours-label, .hours-sub { font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; color: var(--navy); }
+.hours-label { grid-column: 2; grid-row: 1; color: var(--teal); }
+.hours-value { grid-column: 2; grid-row: 2; font-size: 24px; font-weight: 700; color: var(--teal); line-height: 1.1; }
+.hours-sub { grid-column: 1 / -1; grid-row: 3; }
 
 .hero-media {
   position: relative;
@@ -254,15 +257,20 @@ ul { list-style: none; }
   height: 430px;
   margin-left: -185px;
   margin-right: -26px;
-  margin-top: -10px;
+  margin-top: -44px;
 }
-.hero-media img {
+.hero-photo-frame {
   position: relative;
   z-index: 1;
   width: 100%; height: 100%;
-  object-fit: cover;
-  border-radius: 16px;
+  overflow: hidden;
   clip-path: ellipse(145% 95% at 135% 82%);
+}
+.hero-photo-frame img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transform: scale(1.25);
+  transform-origin: 50% 12%;
 }
 .hero-media-stripe {
   position: absolute;
@@ -270,7 +278,6 @@ ul { list-style: none; }
   width: 100%;
   background: linear-gradient(160deg, var(--teal-light), var(--teal));
   clip-path: ellipse(150% 97% at 137% 82.5%);
-  border-radius: 16px;
 }
 
 /* ===== Services ===== */
@@ -387,7 +394,7 @@ ul { list-style: none; }
 .cta-icon {
   width: 42px; height: 42px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--navy);
   display: flex; align-items: center; justify-content: center;
   flex: none;
 }
@@ -428,7 +435,8 @@ ul { list-style: none; }
   .hero-inner { grid-template-columns: 1fr; }
   .hero-text h1, .hero-subtitle, .hero-checklist li { white-space: normal; }
   .hero-media { order: -1; height: 280px; margin-left: 0; margin-right: 0; margin-top: 0; }
-  .hero-media img { clip-path: none; border-radius: 16px; }
+  .hero-photo-frame { clip-path: none; border-radius: 16px; }
+  .hero-photo-frame img { transform: none; }
   .hero-media-stripe { display: none; }
   .hero-hours-card { box-shadow: none; }
 }
