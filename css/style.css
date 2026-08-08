@@ -72,7 +72,7 @@ ul { list-style: none; }
 .site-header {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 16px;
   padding: 14px 26px;
   border-bottom: 1px solid var(--header-border);
   background: #fff;
@@ -83,7 +83,7 @@ ul { list-style: none; }
 .header-inner {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 16px;
   width: 100%;
 }
 
@@ -123,11 +123,11 @@ ul { list-style: none; }
 
 .main-nav {
   display: flex;
-  gap: 18px;
+  gap: 10px;
   font-size: 14px;
   font-weight: 500;
   color: #142D45;
-  margin-left: 6px;
+  margin-left: 0;
   white-space: nowrap;
   flex: none;
 }
@@ -390,11 +390,11 @@ ul { list-style: none; }
 .footer-contacts p a { font-size: 15px; font-weight: 700; color: #fff; }
 .f-icon { width: 26px; height: 26px; flex: none; }
 
-.footer-cta { background: var(--teal); border-radius: 14px; padding: 18px 22px; text-align: center; }
+.footer-cta { background: var(--teal); border-radius: 14px; padding: 14px 22px; text-align: center; }
 .cta-label { font-size: 14px; font-weight: 700; letter-spacing: 0.06em; color: #fff; }
-.cta-row { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 10px; }
+.cta-row { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 6px; }
 .cta-icon {
-  width: 54px; height: 54px;
+  width: 38px; height: 38px;
   border-radius: 50%;
   background: #fff;
   display: flex; align-items: center; justify-content: center;
@@ -402,7 +402,7 @@ ul { list-style: none; }
 }
 .cta-phone { font-size: 27px; font-weight: 800; color: #fff; letter-spacing: 0.01em; white-space: nowrap; }
 .cta-phone:hover { color: #fff; opacity: 0.9; }
-.cta-note { margin-top: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; color: #d6f0ec; }
+.cta-note { margin-top: 4px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; color: #d6f0ec; }
 
 .footer-bottom { margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; }
 .footer-bottom p { font-size: 12px; color: var(--footer-text3); }
@@ -465,11 +465,4 @@ ul { list-style: none; }
   .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .advantages-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero-text h1 { font-size: 24px; }
-}
-
-/* ===== Global typeface override: whole site is Montserrat ExtraBold Italic ===== */
-body, body * {
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif !important;
-  font-weight: 800 !important;
-  font-style: italic !important;
 }
