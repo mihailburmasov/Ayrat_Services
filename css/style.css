@@ -256,7 +256,7 @@ ul { list-style: none; }
   padding: 12px 20px;
   border-radius: 12px;
   box-shadow: 0 10px 24px rgba(18, 60, 74, 0.12);
-  margin-right: -70px;
+  transform: translateX(70px);
 }
 .hours-icon { margin-top: 4px; }
 .hours-text { display: flex; flex-direction: column; }
@@ -280,6 +280,8 @@ ul { list-style: none; }
   width: 100%; height: 100%;
   object-fit: cover;
   object-position: center top;
+  transform: scale(1.9);
+  transform-origin: 100% 0%;
 }
 
 /* ===== Services ===== */
@@ -458,7 +460,7 @@ ul { list-style: none; }
   .step-arrow { transform: rotate(90deg); align-self: center; margin: -2px 0; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .btn-call { justify-content: center; }
-  .hero-hours-card { justify-content: center; margin-right: 0; }
+  .hero-hours-card { justify-content: center; transform: none; }
 }
 
 @media (max-width: 520px) {
