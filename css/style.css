@@ -19,7 +19,7 @@
   --step-bg: #f6f8f9;
   --header-border: #e6ebef;
   --divider: #c8d6da;
-  --hero-gradient: linear-gradient(135deg, #eef7f6 0%, #e2f0ef 45%, #dbeceb 100%);
+  --hero-gradient: #e2f0f0;
   --page-bg: #eef1f4;
 }
 
@@ -256,6 +256,7 @@ ul { list-style: none; }
   padding: 12px 20px;
   border-radius: 12px;
   box-shadow: 0 10px 24px rgba(18, 60, 74, 0.12);
+  margin-right: -70px;
 }
 .hours-icon { margin-top: 4px; }
 .hours-text { display: flex; flex-direction: column; }
@@ -457,7 +458,7 @@ ul { list-style: none; }
   .step-arrow { transform: rotate(90deg); align-self: center; margin: -2px 0; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .btn-call { justify-content: center; }
-  .hero-hours-card { justify-content: center; }
+  .hero-hours-card { justify-content: center; margin-right: 0; }
 }
 
 @media (max-width: 520px) {
