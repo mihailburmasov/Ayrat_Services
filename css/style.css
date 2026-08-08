@@ -98,10 +98,10 @@ ul { list-style: none; }
   font-style: italic;
   letter-spacing: 0.06em;
   line-height: 1;
-  color: var(--teal);
+  color: var(--navy);
   white-space: nowrap;
 }
-.logo-title-alt { color: var(--navy); }
+.logo-title-alt { color: var(--teal); }
 .logo-sub-row {
   display: flex;
   align-items: center;
@@ -352,7 +352,7 @@ ul { list-style: none; }
   gap: 10px;
   text-align: center;
 }
-.step-icon { height: 34px; display: flex; align-items: center; }
+.step-icon { height: 42px; display: flex; align-items: center; justify-content: center; }
 .step-bottom { display: flex; align-items: flex-start; gap: 8px; }
 .step-num {
   width: 20px; height: 20px;
@@ -392,7 +392,7 @@ ul { list-style: none; }
 .cta-icon {
   width: 42px; height: 42px;
   border-radius: 50%;
-  background: var(--navy);
+  background: #fff;
   display: flex; align-items: center; justify-content: center;
   flex: none;
 }
